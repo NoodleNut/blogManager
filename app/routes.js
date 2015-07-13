@@ -17,7 +17,7 @@ module.exports = function(app) {
 
     app.get('/blogimg', function(req, res) {
         res.type('jpg');
-        res.sendFile(path.join(__dirname, '../public/images', 'book.jpg'));
+        res.sendFile(path.join(__dirname, '../public/images', 'wtf-face.png'));
     });
 
 

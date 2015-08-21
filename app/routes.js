@@ -5,6 +5,7 @@ module.exports = function(app) {
     //=============================== DUMMY ===========================================
 
 
+
     //send website all blog text
     app.get('/blogtext', function(req, res) {
         res.send(storage.values());

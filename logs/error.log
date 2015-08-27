@@ -148,3 +148,11 @@
 2015/08/25 16:13:07 [notice] 3756#9900: signal process started
 2015/08/25 16:15:06 [notice] 8076#9484: signal process started
 2015/08/25 16:17:12 [notice] 10944#4080: signal process started
+2015/08/27 16:52:20 [notice] 6512#8384: signal process started
+2015/08/27 16:52:20 [error] 6512#8384: OpenEvent("Global\ngx_stop_8676") failed (2: The system cannot find the file specified)
+2015/08/27 16:53:46 [notice] 2016#4980: signal process started
+2015/08/27 16:53:46 [error] 2016#4980: OpenEvent("Global\ngx_reload_8676") failed (2: The system cannot find the file specified)
+2015/08/27 16:59:39 [notice] 10732#8752: signal process started
+2015/08/27 16:59:39 [error] 10732#8752: OpenEvent("Global\ngx_reload_8676") failed (2: The system cannot find the file specified)
+2015/08/27 16:59:42 [notice] 9244#948: signal process started
+2015/08/27 16:59:42 [error] 9244#948: OpenEvent("Global\ngx_reload_8676") failed (2: The system cannot find the file specified)

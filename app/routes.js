@@ -1,6 +1,6 @@
 //================================Routes===========================================//
 
-module.exports = function(app) {
+module.exports = function(app, db) {
 
     //=============================== DUMMY ===========================================
 
@@ -45,6 +45,24 @@ module.exports = function(app) {
         storage.setItem(req.body.title, req.body);
 
         res.send('thank you come again')
+    });
+
+
+    //sign up
+    app.get('/setup', function(req, res) {
+
+        // create a sample user
+        var nick = {
+            name: 'Nick Cerminara',
+            password: 'password',
+
+        };
+        res.send('setup')
+
+        db.collection('user').insert(nick);
+
+
+
     });
 
 

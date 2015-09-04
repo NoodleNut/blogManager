@@ -22,16 +22,23 @@ storage = require('node-persist');
 
 storage.initSync();
 
+var mdb; //for storing db obj and passing it around
+
 
 // DATABASE CRUMS ======================================
 
-MongoClient.connect('mongodb://usc_admin:admin1@ds031701.mongolab.com:31701/usc_web', function(err, db) {
+MongoClient.connect('mongodb://dylaila:bluecakes@ds047792.mongolab.com:47792/blogmanager', function(err, db) {
     if (err) throw err;
     console.log("Connected to Database");
-    _db = db //this is our global database object
+
+    mdb = db;
+    // routes ======================================================================
+    require('./app/routes.js')(app, mdb) // load our routes and pass in our app and fully configured passport
+
 });
 
 app.set('SHHsecret', 'dylanisdracula');
+
 app.use(bodyParser.json()) // get information from html forms
 app.use(bodyParser.urlencoded({
     extended: true
@@ -42,10 +49,6 @@ app.use(express.static(__dirname + '/public'));
 
 app.use(flash());
 
-
-
-// routes ======================================================================
-require('./app/routes.js')(app) // load our routes and pass in our app and fully configured passport
 
 // launch ======================================================================
 app.listen(port, "127.0.0.1")

@@ -1,21 +1,18 @@
 {
-  "name": "blogManager",
-  "main": "server.js",
-  "dependencies": {
-    "bcrypt-nodejs": "latest",
-    "body-parser": "~1.4.2",
-    "connect-flash": "~0.1.1",
-    "connect-multiparty": "^1.2.5",
-    "express": "*",
-    "express-session": "*",
-    "fs": "0.0.2",
-    "jsonwebtoken": "^5.0.4",
-    "method-override": "~2.0.2",
-    "mongodb": "*",
-    "mongoose": "~3.8.0",
-    "morgan": "~1.0.0",
-    "node-persist": "0.0.3",
-    "path": "^0.11.14",
-    "persist": "^0.2.7"
-  }
+    "name": "blogManager",
+    "main": "server.js",
+    "dependencies": {
+        "bcrypt-nodejs": "latest",
+        "body-parser": "~1.4.2",
+        "connect-flash": "~0.1.1",
+        "connect-multiparty": "^1.2.5",
+        "express": "*",
+        "fs": "0.0.2",
+        "jsonwebtoken": "^5.0.4",
+        "method-override": "~2.0.2",
+        "mongodb": "*",
+        "node-persist": "0.0.3",
+        "path": "^0.11.14",
+        "persist": "^0.2.7"
+    }
 }

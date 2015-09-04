@@ -1,9 +1,17 @@
-app.config(function($routeProvider) {
-    $routeProvider
+app.config(function($routeProvider)
+{
+	$routeProvider
 
-    .when('/', {
-        templateUrl: 'views/main/main-view.html',
-        controller: 'MainController'
-    })
+	.when('/',
+	{
+		templateUrl: 'views/login/login-view.html',
+		controller: 'LoginController'
+	})
+
+	.when('/edit',
+	{
+		templateUrl: 'views/main/main-view.html',
+		controller: 'MainController'
+	})
 
 });
